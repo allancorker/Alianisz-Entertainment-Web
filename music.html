@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+            <script src="js/bootstrap.js"></script>
+            <style>
+                img{
+                    transition: 2s;
+                }
+                img:hover{
+                    transform: scale(0.9);
+                }
+            </style>
+    </head>
+    <body class="bg-dark">
+
+         <!-- navbar section start -->
+         <section>
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(108, 86, 87);">
+                    <a href="#" class="navbar-brand text-danger"><h3>AlianiSZ Entertainment Hub</h3></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-link active text-info">Home</a>
+                            <a href="MoviesandSeries.html" class="nav-link text-warning">Movies and Series</a>
+                            <a href="music.html" class="nav-link text-info">Music</a>
+                            <a href="games.html" class="nav-link text-warning">Games</a>
+                            <a href="#" class="nav-link text-info">Tools</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">logIn Here</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- navbar section end -->
+        
+         <!-- Modal div start-->
+         <div class="modal" id="mymodal"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header" style="background-color: rgb(193, 191, 188);">
+                        <h4>LOGIN</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                        <!-- modal body -->
+                        <div class="modal-body" style="background-color: bisque;">
+                            <form action="">
+                                <input type="email" placeholder="Enter Email" class="form-control"> <br> 
+                                <input type="password" placeholder="Enter password" class="form-control"> <br> 
+                                <h6>Additional Info</h6>
+                                <input type="text" placeholder="Telephone N.o" class="form-control"> <br>
+                                <label for=""><u>Gender</u></label>  <br>
+                                <input type="checkbox" name="" id="">Male <br> 
+                                <input type="checkbox">Female <br> <br>
+                                <label for=""> <u>Preference [Atmost three DO NOT select all]</u></label> <br>
+                                <input type="radio"> Movies
+                                <input type="radio" name="" id="">Series
+                                <input type="radio">Music
+                                <input type="radio">Games <br> <br>
+                                <button type="submit" class="btn btn-success">Done</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: darkgray;">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal div end -->
+
+        <!-- carousel section start -->
+        <section class="row text-center">
+            <div class="col-md-12 p-4">
+                <div class="carousel slide" id="myCarousel" data-bs-ride="carouse1">
+                    <!-- Wrapper for Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/music/Applemusic.jpeg" alt="movie template1" class="d-block " style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/music/musicHeadphones.jpeg" alt="movie slide" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/music/gospelMusic.jpeg" alt="Music Slide1" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/music/popMusic.jpeg" alt="Music Slide2" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/music/RnB.jpeg" alt="Game Slide1" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/music/reggea.jpeg" alt="Game Slide2" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        
+                    </div>
+                    <!-- carousel controls-->
+                    <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- carousel section end -->
+        <hr>
+
+        <!-- Content section Start -->
+        <section class="container-fluid text-center">
+            <!-- Row 1 -->
+            <h2 class="text-start text-primary"><u>Music Genres</u></h2>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card shadow"> 
+                        <a href="#gospel"><img src="Images/music/gospel.png" alt="Always Gospel" style="height: 350px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Gospel Music</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow"> 
+                        <a href="#hiphop"><img src="Images/music/hiphopLife.avif" alt="Hiphop life" style="height: 350px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Hiphop Music</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow"> 
+                        <a href="#rnbmusic"><img src="Images/music/RnBMusic.jpeg" alt="RnB Souls" style="height: 330px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Rythms and Blues Music</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow"> 
+                        <a href="#soulmusic"><img src="Images/music/soulMusic.jpg" alt="Soul Music" style="height: 350px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Soul Music</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow"> 
+                        <a href="#countrymusic"><img src="Images/music/CountryMusic.jpg" alt="Country Music" style="height: 350px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Country Music</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow"> 
+                        <a href="#rockmusic"><img src="Images/music/Rock.webp" alt="Rock Life" style="height: 350px; width:100%;"></a>
+                        <div class="card-body">
+                            <h4>Rock Music</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <hr>
+
+            <!-- Row 2 -->
+            <h2 class="text-start text-primary" id="gospel"><u>Gospel Songs</u></h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/music/Worship-Music.webp" alt="Worship " style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Worship Songs</h4>
+                            <p>Elevational Worship experiences, that brings you closer to God and creates an atmosphere for worshiping the Lord. This is possible at your comfort seat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/music/RH_Worship_Team.jpg" alt="Praise songs" style="height: 330px;">
+                        <div class="card-body">
+                            <h4>Praise Songs</h4>
+                            <p>Dance and give praise to the Almighty songs. These will take you up from your seat and make you dance like never before, you will shout till you can not shout again.These are live performance praise songs from the professional artists and musicians. Enjoy these annointed praise songs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/music/AfricanStyle.jpg" alt="African Styles" style="height: 370px;">
+                        <div class="card-body">
+                            <h4>African Praise & Worship Style</h4>
+                            <p>These will enlighten your mood and make you enjoy every moment of praise and worship, as you get to experience african unique style of gloryfying the Lord.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/music/GMix.jpg" alt="Gospel mix">
+                        <div class="card-body">
+                            <h4>Gospel Mix</h4>
+                            <p>Get to hear latest and hottest mixes of this genre from the best Dj's from all over the world.From African songs to American to elevation praise and worships to all types of gospel music, enjoy every moment of praise and worship from these mixes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+            
+            <!-- Row 3 -->
+            <h2 class="text-start text-primary" id="hiphop"><u>Hiphop Music</u></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/HiphopMoves.jpeg" alt="Dance Hiphop Moves" style="height: 300px;">
+                        <div class="card-body">
+                            <h4>Killer HipHop Moves</h4>
+                            <p>Watch latest release of rap songs with hotter dance moves. Breathe taking moves that would move you from your seat.As well as hiphop dance battles from different dance crews, best of the dance crews of all time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/HiphopConcerts.jpg" alt="Rap concerts">
+                        <div class="card-body">
+                            <h4>Live Rap Concerts</h4>
+                            <p>Watch and attend best HipHop concerts from your seat. You will feel as if you are in the concerts. Get to be notified the first incase of new release or upcoming concerts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/RapBattles.jpg" alt="Rapp battle">
+                        <div class="card-body">
+                            <h4>Rap Battles</h4>
+                            <p>Experience the best of free styles from G.O.A.T Rappers. Don't miss out from these free styles if you are a hip hop. This opportunity shouldn't leave you out as a rapper or a fan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 4 -->
+            <h2 class="text-start text-primary" id="rnbmusic"><u>Rythms & Blues</u></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <img src="Images/music/RnBOldies.webp" alt="rnb oldies" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>90's Playlist</h4>
+                            <p>For the RnB lovers, listen to legends of this genre from the old playlist. Listen to your favourites as most of the favourites are in the 90's list. Only true fans of this kind of genre will listen from this playlist. Don't get left out from this.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <img src="Images/music/RNBHits.jpeg" alt="Rnb Mixe" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Best of RnB Mix</h4>
+                            <p>Imagine best of RnB's songs lined up for you, Listen to these as there is none like these mixes. Mixes that would get the mood in you alive. Only this genre gets the special, as music comes form all the way back from the beginning to the present.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <hr>
+            
+            <!-- Row 5 -->
+            <h2 class="text-start text-primary" id="soulmusic"><u>Souls Music</u></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/softSouls.jpeg" alt="soft soul" style="height: 330px;">
+                        <div class="card-body">
+                            <h4>Soft Souls</h4>
+                            <p>Souls genre is another special kind of type of music that gives you refreshemnts. This type of music isn't for specific people, its for everone so you are the person this kind is meant for. This will cool you down and make your emotions cooler.Regardless of your situation, trust me, souls is the good relaxer kind of music to listen to.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/classicalSoul.jpeg" alt="classical soul" style="height: 400px ;">
+                        <div class="card-body">
+                            <h4>Classical Souls</h4>
+                            <p>This type will give you a definition of what your soul is, rather, who you really are, in the soul as well as in the flesh. Get these classical souls and listen at your comfort at a relaxed position.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/Timeless souls.jpeg" alt="Timeless soul" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Timeless Souls</h4>
+                            <p>Get it from the best soul artists and very important in the society. You will get inspirations from these lines of songs and they will be timeless as they never get old.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr> 
+
+            <!-- Row 6 -->
+            <h2 class="text-start text-primary" id="countrymusic"><u>Country Music</u></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <img src="Images/music/The-BIG-Country-Music-Show-.jpg" alt="Bigger Country Shows" style="height: 475px;">
+                        <div class="card-body">
+                            <h4>Country Music Shows</h4>
+                            <p>Watch The biggest and best country music shows at your comfort. Enjoy these shows, with your famuly and friends. Shows like no other brought to you by the better country music lovers inclusive of your best country music artists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <img src="Images/music/CountryMusicClub.jpeg" alt="Country Music club" style="height: 500px;">
+                        <div class="card-body">
+                            <h4>Country Music Club</h4>
+                            <p>Get to join one of these great country music clubs. If you a true country musician, you will not be left out as these clubs impact the lives of country musicists.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 7 -->
+            <h2 class="text-start text-primary" id="rockmusic"><u>Rock Music</u></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/hardRock.jpeg" alt="Hard rock" style="height: 425px;">
+                        <div class="card-body">
+                            <h4>Hard Rock</h4>
+                            <p>Experience the hardest rock of all time from greatest rock musician. Hard rock for the loudest of people. Listen to best of best Rock 'n' Roll.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/softRock.jpeg" alt="soft rock" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Soft Rock</h4>
+                            <p>These musicians will play the rock you love to hear, not so loud that would blow our brains out but would melt your emotions with the rythm of the lead guitars and rocky drummist. Have a nice time listening to your type of rock music.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="Images/music/classicalRock.jpeg" alt="classical rock" style="height: 400px;">
+                        <div class="card-body">
+                            <h4>Classical Rock Music</h4>
+                            <p>This play list has all the rocks you need, from the ninetee's to which ever time you would want. Be part of the listeners to these rock music. You will as well see the best rock concerts there has ever been.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+
+        </section>
+        <!-- Content Section End -->
+
+
+        <div class="row bg-secondary text-start p-1">
+            <div class="col-md-4">
+                <h5>Commonly Known Websites include</h5>
+                <ul>
+                    <li>Netflix</li>
+                    <li>Amazon</li>
+                    <li>Zulu</li>
+                    <li>Prime Videos</li>
+                    <li>Disney +</li>
+                </ul>
+                <p>...and many more</p>
+            </div>
+            <div class="col-md-4">
+                <h6>We'd love it if you leave us with your comments below</h6>
+                <form action="">
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" class="bg-info" style="height: 150px;width: 320px;">Any comments...</textarea> <br>
+                    <button type="submit" class="btn btn- btn-outline-light">Send comment</button> <br> <br>
+                    <span class="btn btn-success btn-outline-muted">Thank you</span>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow us on our social media platforms</h4>
+                <img src="Images/in.png" alt="IGicon" style="height: 25px;">         <a href="#" class="text-danger">alianisz01_KE</a>
+                <br> <br>
+                <img src="Images/x.png" alt="Xicon" style="height: 25px;">      <a href="#" class="text-dark">alianisz_KE01</a>
+                <br> <br>
+                <img src="Images/fb.png" alt="Fbicon" style="height: 25px;">   <a href="#" class="text-primary">alianisz_KE01</a>
+                <br> <br>
+            </div>
+        </div>
+
+
+
+
+        <!-- footer section start -->
+        <section>
+            <footer style="background-color: rgb(93, 87, 80)">
+                <div class="text-center">
+                    <span class="text-success"><center>Sign up for free</center></span>
+                    <button type="submit" class="btn btn-secondary">Sign Up</button>
+                </div>
+                <div class="text-center" style="background-color: rgb(69, 58, 58);">
+                    <p class="text-secondary"><b>Developed by Allan Corker &copy; 2024. All Rights Reserved</b></p>
+                </div>
+            </footer>
+        </section>
+        <!-- footer section end -->
+        
+    </body>
+</html>

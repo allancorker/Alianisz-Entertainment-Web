@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Games</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
+        <style>
+            img{
+                transition: 2s;
+            }
+            img:hover{
+                transform: scale(0.5);
+            }
+        </style>
+    </head>
+    <body class="bg-dark">
+
+         <!-- navbar section start -->
+         <section>
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(108, 86, 87);">
+                    <a href="#" class="navbar-brand text-danger"><h3>AlianiSZ Entertainment Hub</h3></a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-link active text-info">Home</a>
+                            <a href="MoviesandSeries.html" class="nav-link text-warning">Movies and Series</a>
+                            <a href="music.html" class="nav-link text-info">Music</a>
+                            <a href="games.html" class="nav-link text-warning">Games</a>
+                            <a href="#" class="nav-link text-info">Tools</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">logIn Here</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- navbar section end -->
+        
+         <!-- Modal div start-->
+         <div class="modal" id="mymodal"> 
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- modal header -->
+                    <div class="modal-header" style="background-color: rgb(193, 191, 188);">
+                        <h4>LOGIN</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                        <!-- modal body -->
+                        <div class="modal-body" style="background-color: bisque;">
+                            <form action="">
+                                <input type="email" placeholder="Enter Email" class="form-control"> <br> 
+                                <input type="password" placeholder="Enter password" class="form-control"> <br> 
+                                <h6>Additional Info</h6>
+                                <input type="text" placeholder="Telephone N.o" class="form-control"> <br>
+                                <label for=""><u>Gender</u></label>  <br>
+                                <input type="checkbox" name="" id="">Male <br> 
+                                <input type="checkbox">Female <br> <br>
+                                <label for=""> <u>Preference [Atmost three DO NOT select all]</u></label> <br>
+                                <input type="radio"> Movies
+                                <input type="radio" name="" id="">Series
+                                <input type="radio">Music
+                                <input type="radio">Games <br> <br>
+                                <button type="submit" class="btn btn-success">Done</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: darkgray;">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal div end -->
+
+        <!-- carousel section start -->
+        <section class="row text-center">
+            <div class="col-md-12 p-4">
+                <div class="carousel slide" id="myCarousel" data-bs-ride="carouse1">
+                    <!-- Wrapper for Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/games/signal-5165949_640.jpg" alt="movie template1" class="d-block " style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/games/game-console-6603120_640.jpg" alt="movie slide" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/games/gaming-4075424_640.jpg" alt="Music Slide1" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Images/games/playstation-6689793_640.jpg" alt="Music Slide2" class="d-block" style="width:60%; height: 500px; margin-left: auto; margin-right: auto;">
+                        </div>
+                        
+                    </div>
+                    <!-- carousel controls-->
+                    <a href="#myCarousel" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- carousel section end -->
+        <hr>
+
+        <!-- content section start -->
+        <section class="container-fluid text-center">
+            <!-- Row 1 -->
+            <h2 class="text-start text-primary"><u>Games</u></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <a href="#playstation"><img src="Images/games/playstation-logo.webp" alt="play station" style="height: 500px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Play Station Games</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <a href="#pcgames"><img src="Images/games/pcgames.avif" alt="PC games" style="height: 500px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>PC Games</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <a href=""><img src="Images/games/mobile-games-sensor-tower.webp" alt="mobile games" style="height: 500px; width: 100%;"></a>
+                        <div class="card-body">
+                            <h4>Mobile Games</h4>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 2 -->
+            <h2 class="text-start text-primary" id="playstation"><u>Play Station Games</u></h2>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="card shadow">
+                        <img src="Images/games/Fifa.webp" alt="Fifa" style="height: 350px;">
+                        <div class="card-body">
+                            <h4>FIFA 24</h4>
+                            <p>Experience the latest features brought by this amazing football game. Fifa lovers will definitely love this. What is there not to be loved about this game ?? For more greater experience try it on the new PS 5.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow">
+                        <img src="Images/games/GTA5.jpg" alt="gta 5" style="height: 350px;">
+                        <div class="card-body">
+                            <h4>GTA 5</h4>
+                            <p>One of the best ranked open world games in the world. Try this and you will never find yourself getting unoccupied. Get to do missions that will make you feel alive and give experiences you have never had before.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow">
+                        <img src="Images/games/COD.jpg" alt="COD" style="height: 330px;">
+                        <div class="card-body">
+                            <h4>Call Of Duty</h4>
+                            <p>For the adventure, gun and thrilling lovers, this is your game. Play this shocking gun fighting game. You will get involved in rescue missions and some of the impossible missions ever, this new COD game comes with new abilities for the character in action.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow">
+                        <img src="Images/games/MK11.webp" alt="MK 11" style="height: 330px;">
+                        <div class="card-body">
+                            <h4>Mortal Kombat 11</h4>
+                            <p>The new MK 11 is out and is waiting for you to buy and get started. Now available for the latest PS 5 version. Experience fights that will take outside the universe. Play even story modes that will get you excited and even more.Don't be left out.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow">
+                        <img src="Images/games/NFSUnbound.webp" alt="NFS" style="height: 280px;">
+                        <div class="card-body">
+                            <h4>Need For Speed Unbound</h4>
+                            <p>Another amazing game for the fast racers. This is the new NFS Unbound that comes with new upgraded cars that will make you feel like jerking out of your seat. This is an amazing car driven game like no other. Now available for the Ps 5 version and the Ps 4 are also not left out</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card shadow">
+                        <img src="Images/games/GodofWar.jpeg" alt="God Of war" style="height: 380px;">
+                        <div class="card-body">
+                            <h4>God of War</h4>
+                            <p>For the thrilling action and adventure lovers. This shouldn't pass you by as this is the latest version of the God of war. New missions and even dangerous opposition that you've never faced.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+
+            <!-- Row 3 -->
+            <h2 class="text-start text-primary" id="pcgames"><u>PC Games</u></h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/games/Forza-Horizon.webp" alt="Forza ">
+                        <div class="card-body">
+                            <h4>Forza Horizon 5</h4>
+                            <p>We're as happy to say that Forza is getting better with every game as you are to hear it. There is no other racing game out there that can be compared to this, especially the PC gamers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="Images/games/Minecraft.jpg" alt="Minecraft">
+                        <div class="card-body">
+                            <h4>Minecraft</h4>
+                            <p>An epic game created by the one and only Markus Notch to give you an interesting opprtunity to play a sandbox game developed by the Majong Studios. Included with Game PassOffers in-app purchases. Included + with. Game Pass. Microsoft Mahjong. FreeOffers in-app purchases.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="" alt="fortnite">
+                        <div class="card-body">
+                            <h4>Fortnite Battle Royale</h4>
+                            <p>Fortnite's Battle Royale quickly became a worldwide phenomenon, but its fast and frequent updates have shown it's more than just a flash in the pan. Its free-to-play format and relatively simple shooting mechanics make it a significantly more accessible take on the battle royale shooter. But that's coupled with unique building tools that push its skill cap sky high.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card shadow">
+                        <img src="" alt="Dishonored">
+                        <div class="card-body">
+                            <h4>Dishonored 2</h4>
+                            <p>. Arkane is known for many games, but not to take anything away from the also-fantastic Prey and Deathloop for our money, Dishonored 2 stands as its masterpiece. The darkly fantastical world of magic and intrigue that the original created is built upon in the thriving city of Karnaca, filled with convincing NPCs and towering Clockwork Soldiers that represent both dire threat and tempting opportunities if they can be turned against their masters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <hr>
+            
+
+        </section>
+        <!-- content section end -->
+
+
+        <div class="row bg-secondary text-start p-1">
+            <div class="col-md-4">
+                <h5>Commonly Known Websites include</h5>
+                <ul>
+                    <li>Netflix</li>
+                    <li>Amazon</li>
+                    <li>Zulu</li>
+                    <li>Prime Videos</li>
+                    <li>Disney +</li>
+                </ul>
+                <p>...and many more</p>
+            </div>
+            <div class="col-md-4">
+                <h6>We'd love it if you leave us with your comments below</h6>
+                <form action="">
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" class="bg-info" style="height: 150px;width: 320px;">Any comments...</textarea> <br>
+                    <button type="submit" class="btn btn- btn-outline-light">Send comment</button> <br> <br>
+                    <span class="btn btn-success btn-outline-muted">Thank you</span>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h4>Follow us on our social media platforms</h4>
+                <img src="Images/in.png" alt="IGicon" style="height: 25px;">         <a href="#" class="text-danger">alianisz01_KE</a>
+                <br> <br>
+                <img src="Images/x.png" alt="Xicon" style="height: 25px;">      <a href="#" class="text-dark">alianisz_KE01</a>
+                <br> <br>
+                <img src="Images/fb.png" alt="Fbicon" style="height: 25px;">   <a href="#" class="text-primary">alianisz_KE01</a>
+                <br> <br>
+            </div>
+        </div>
+
+
+        <!-- footer section start -->
+        <section>
+            <footer style="background-color: rgb(93, 87, 80)">
+                <div class="text-center">
+                    <span class="text-success"><center>Sign up for free</center></span>
+                    <button type="submit" class="btn btn-secondary">Sign Up</button>
+                </div>
+                <div class="text-center" style="background-color: rgb(69, 58, 58);">
+                    <p class="text-secondary"><b>Developed by Allan Corker &copy; 2024. All Rights Reserved</b></p>
+                </div>
+            </footer>
+        </section>
+        <!-- footer section end -->
+        
+    </body>
+</html>
